@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Recusa de inscrição</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<div style="background-color: #459fff; text-align: center;">
+		<h1
+			style="margin: 0px; color: #FFF; font-family: Helvetica; font-size: 25px; font-weight: 100; padding: 2px">
+			Sua inscrição foi recusada...</h1>
+	</div>
+	<div style="padding: 15px; background-color: #f3f3f3; font-size: 15px;">
+		<p style="margin: 0px; font-family: Helvetica; font-weight: 100">
+			Olá <span th:text="${inscricao.usuario.nome}"></span>,
+		</p>
+		<p style="font-family: Helvetica; font-weight: 100">
+			Lamentamos, mas sua inscrição de número <span th:text="${inscricao.id}"></span> no evento <span th:text="${inscricao.evento.titulo}"></span> foi
+			recusada.
+		</p>
+		<p style="font-family: Helvetica; font-weight: 100">Contudo não deixe de se inscrever nos demais eventos ok!</p>
+	</div>
+	<div
+		style="background-color: #459fff; color: #FFF; text-align: center; font-family: Helvetica; font-weight: 100">
+		<strong>COREN-MG</strong>
+	</div>
+</body>

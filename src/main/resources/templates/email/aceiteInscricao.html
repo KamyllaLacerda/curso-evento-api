@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Aceite de inscrição</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<div style="background-color: #459fff; text-align: center;">
+		<h1
+			style="margin: 0px; color: #FFF; font-family: Helvetica; font-size: 25px; font-weight: 100; padding: 2px">
+			Boas notícias, sua inscrição foi aceita o/!</h1>
+	</div>
+	<div style="padding: 15px; background-color: #f3f3f3; font-size: 15px;">
+		<p style="margin: 0px; font-family: Helvetica; font-weight: 100">
+			Olá <span th:text="${inscricao.usuario.nome}"></span>,
+		</p>
+		<p style="font-family: Helvetica; font-weight: 100">
+			Sua inscrição de número <span th:text="${inscricao.id}"></span> no evento <span th:text="${inscricao.evento.titulo}"></span> foi
+			aceita!!
+		</p>
+		<p style="font-family: Helvetica; font-weight: 100">Esperamos você
+			lá. Até logo!</p>
+	</div>
+	<div
+		style="background-color: #459fff; color: #FFF; text-align: center; font-family: Helvetica; font-weight: 100">
+		<strong>COREN-MG</strong>
+	</div>
+</body>
+</html>

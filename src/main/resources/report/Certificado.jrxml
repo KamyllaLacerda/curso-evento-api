@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Certificado" pageWidth="595" pageHeight="842" whenNoDataType="BlankPage" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="1" uuid="2caa90f6-5fef-4ef7-bcea-d6b46c4fd614">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="nome" class="java.lang.String"/>
+	<parameter name="sobrenome" class="java.lang.String"/>
+	<parameter name="cpf" class="java.lang.String"/>
+	<parameter name="titulo" class="java.lang.String"/>
+	<parameter name="dataInicio" class="java.util.Date"/>
+	<parameter name="dataFim" class="java.util.Date"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="199" splitType="Stretch">
+			<staticText>
+				<reportElement x="-21" y="160" width="595" height="39" forecolor="#000000" uuid="09e81743-f641-47e6-90f9-6570719d686f">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[CERTIFICADO DE PARTICIPAÇÃO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-24" y="79" width="602" height="40" forecolor="rgba(161, 205, 255, 0.0)" backcolor="#96C7FF" uuid="9a83ad9a-e237-4d83-9218-99af1398e2f9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-26" y="-20" width="601" height="99" forecolor="rgba(161, 205, 255, 0.0)" backcolor="#3E9CFF" uuid="afba8ebf-0ba7-4372-b2c3-e93833991f27">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+		</band>
+	</title>
+	<detail>
+		<band height="334" splitType="Stretch">
+			<staticText>
+				<reportElement x="119" y="50" width="310" height="20" uuid="d9e29e21-df47-4cc6-8470-98d1fb8691a3"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Certificamos que]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="160" width="150" height="20" uuid="ba58a756-c505-4950-a248-c21a4ce8d9f7"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[De CPF número]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="210" width="330" height="20" uuid="9b886dda-eae7-44a7-87e7-85932238d405"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Particicou como convidado(a) no evento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="300" width="120" height="20" uuid="3fdb41e1-83ca-4cd2-a960-5f62f6cfc7cf"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[no período do dia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="300" width="70" height="20" uuid="7763ef5f-02ac-4050-ab01-5b4815f19ee6"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[até o dia]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="90" width="160" height="50" forecolor="#459FFF" uuid="8d86568d-d560-4a8c-bdf1-64e3d9a4c4b9"/>
+				<textElement textAlignment="Right">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="90" width="198" height="50" forecolor="#459FFF" uuid="83397435-cc16-42df-94f0-d085e1b78e79"/>
+				<textElement textAlignment="Left">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sobrenome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="160" width="100" height="20" uuid="661c1d2f-4f4d-41d9-9b49-936b3246e347"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cpf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="250" width="330" height="30" forecolor="#459FFF" uuid="f67884e6-af70-4fe3-aa54-b8144999bbf4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{titulo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="190" y="300" width="100" height="20" uuid="976bf8ac-4244-46fb-8c94-3ed20a9fdcb5"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataInicio}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="360" y="300" width="105" height="20" uuid="e3af0792-656c-4fbf-bec8-7afdbeb3281c"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataFim}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="199" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-22" y="60" width="597" height="40" forecolor="rgba(161, 205, 255, 0.0)" backcolor="#96C7FF" uuid="e01e671e-9bb7-4a7d-a3c4-b11763e1170f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-23" y="100" width="601" height="99" forecolor="rgba(161, 205, 255, 0.0)" backcolor="#3E9CFF" uuid="f6bbf47d-c844-438f-815c-315e8fd6338d"/>
+			</rectangle>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Confirmação de inscrição</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<div style="background-color: #459fff; text-align: center;">
+		<h1
+			style="margin: 0px; color: #FFF; font-family: Helvetica; font-size: 25px; font-weight: 100; padding: 2px">
+			Sua inscrição foi realizada com sucesso!!</h1>
+	</div>
+	<div style="padding: 15px; background-color: #f3f3f3; font-size: 15px;">
+		<p style="margin: 0px; font-family: Helvetica; font-weight: 100">
+			Olá <span th:text="${inscricao.usuario.nome}"></span>,
+		</p>
+		<p style="font-family: Helvetica; font-weight: 100">
+			Sua inscricao de número <span th:text="${inscricao.id}"></span> no
+			evento <span th:text="${inscricao.evento.titulo}"></span> foi
+			realizada com sucesso!
+		</p>
+		<p style="font-family: Helvetica; font-weight: 100">Agora é só
+			aguardar para que ela seja aceita!</p>
+		<p style="font-family: Helvetica; font-weight: 100">Segue QRCode
+			da sua incricao</p>
+		<!--/*/
+		<img src="https://servicosteste.corenmg.gov.br/corenmg-servicos-evento/inscricao/qrCode/${inscricao.id }"width="200" height="200">
+		/*/-->
+	</div>
+	<div
+		style="background-color: #459fff; color: #FFF; text-align: center; font-family: Helvetica; font-weight: 100">
+		<strong>COREN-MG</strong>
+	</div>
+</body>
+</html>
