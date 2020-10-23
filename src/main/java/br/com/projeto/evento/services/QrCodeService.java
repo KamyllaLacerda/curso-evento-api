@@ -15,9 +15,9 @@ public class QrCodeService {
 		try {
 			QRCodeWriter qrCodeWriter = new QRCodeWriter();
 			BitMatrix bitMatrix = qrCodeWriter.encode("Olá " + inscricao.getUsuario().getNome()
-					+ ",\n obrigado(a) por participar do evento " + inscricao.getEvento().getTitulo() +"!!"
-					+ "\n Você pode gerar seu certificado clicando no link abaixo! \n"
-					+ "http://localhost:8080/inscricao/pdf/" + inscricao.getId(), BarcodeFormat.QR_CODE, 200, 200);
+					+ ",\nsua inscrição de número " + inscricao.getId() + " no evento " + inscricao.getEvento().getTitulo()
+					+ "\nfoi realizada com sucesso!\n"
+					+ "Aguarde sua aceitação no evento...", BarcodeFormat.QR_CODE, 200, 200);
 			ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 			MatrixToImageWriter.writeToStream(bitMatrix, "png", byteArrayOutputStream);
 			return byteArrayOutputStream.toByteArray();

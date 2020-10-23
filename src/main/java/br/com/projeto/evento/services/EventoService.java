@@ -57,6 +57,7 @@ public class EventoService {
 	
 	public List<Inscricao> buscarInscricaoEvento(Integer evento){
 		return repository.findInscricaobyIdEvento(evento);
+		
 	}
 	
 }
