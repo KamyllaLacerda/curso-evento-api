@@ -41,8 +41,4 @@ public class UsuarioController {
 		return service.cadastrarUsuario(usuario);
 	}
 
-	@DeleteMapping("/{id}")
-	public void deletarUsuario(@PathVariable Integer id) {
-		service.deletarUsuario(id);
-	}
 }

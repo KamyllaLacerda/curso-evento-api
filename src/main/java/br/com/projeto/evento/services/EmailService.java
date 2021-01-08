@@ -181,4 +181,4 @@ public class EmailService {
 		return templateEngine.process("email/recusaInscricao", contextRecusa);
 	}
 	
-}
+} 

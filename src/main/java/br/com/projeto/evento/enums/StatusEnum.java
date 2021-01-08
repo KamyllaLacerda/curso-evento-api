@@ -31,6 +31,7 @@ public enum StatusEnum {
 	
 		throw new RuntimeException("Status não encontrado" + status);
 
-	}
+	} 
+
 
 }
